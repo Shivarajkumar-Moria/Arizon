@@ -1,0 +1,13 @@
+type Customer {
+    customerID: ID!
+    customerName: String!
+}
+
+type Mutation {
+    insertCustomer(customerName: String!): Customer
+}
+
+
+type Query {
+    fetchCustomer(customerID: ID!): Customer
+}
